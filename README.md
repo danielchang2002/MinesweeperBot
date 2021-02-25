@@ -62,7 +62,7 @@
 ![screenshot of demo](screenshot.png?raw=true "Demo Screenshot")
 
 
-* python
+* Python
 
 ```sh
   sudo python main.py NUM_ROWS NUM_COLS
@@ -73,6 +73,10 @@ Move mouse to top left of board, press enter.
 Move mouse to bottom right of board, press enter.
 
 Move mouse to smiley face, press enter.
+
+Move mouse to top left of screen to stop
+
+Win minesweeper!
 
 ## Contact
 
