@@ -8,6 +8,8 @@ from math import inf
 import copy
 import sys
 
+buffer = "                 "
+
 class Board:
     def __init__(self, rows, cols, pieceWidth, pieceHeight, left, top):
         self.rows, self.cols = rows, cols
@@ -95,6 +97,7 @@ class Board:
         '''
         print()
         for row in range(self.rows):
+            print(buffer, end="")
             for col in range(self.cols):
                 piece = self.board[row][col]
                 result = None
@@ -266,7 +269,7 @@ class Board:
         '''
         Clicks a piece given the row and column. Right clicks if flag 
         '''
-        print("flagging: " if flag else "clicking: ", row, col)
+        # print("flagging: " if flag else "clicking: ", row, col)
         x, y = self.left + (col * self.pieceWidth) + (0.5 * self.pieceWidth), \
             self.top + (row * self.pieceHeight) + (0.5 * self.pieceHeight)
         x /= 2

@@ -28,11 +28,16 @@ if __name__ == '__main__':
     keyboard.wait('enter')
     smileyX, smileyY = pyautogui.position()
 
+    # gets win box coordinate
+    # keyboard.wait('enter')
+    # winX, winY = pyautogui.position()
+
     pieceWidth, pieceHeight = (right - left) / cols, (bottom - top) / rows
 
     while 1:
         board = Board(rows, cols, pieceWidth, pieceHeight, left, top) 
         pyautogui.click(smileyX, smileyY)
+        # pyautogui.click(winX, winY)
         sleep(0.1)
         board.firstMove()
         while 1:
